@@ -340,7 +340,7 @@ syntax match typstMathFunction
 syntax match typstMathNumber
     \ /\<\d\+\>/
     \ contained
-runtime! syntax/typst-symbols.vim
+" runtime! syntax/typst-symbols.vim
 
 
 " Math > Linked groups {{{2
