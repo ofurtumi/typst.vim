@@ -288,8 +288,8 @@ syntax match typstMarkupEnumList
 " syntax match typstMarkupItalicError
 "     \ /\v(\w|\\)@<!_\S@=.*|.*\S@<=\\@<!_/
 " syntax match typstMarkupItalic
-"     \ /\v(\w|\\)@<!_\S@=.*(\n.+)*\S@<=\\@<!_/
-"     \ contains=typstMarkupItalicRegion
+    \ /\v(\w|\\)@<!_\S@=.*(\n.+)*\S@<=\\@<!_/
+    \ contains=typstMarkupItalicRegion
 syntax region typstMarkupItalicRegion
     \ contained
     \ matchgroup=typstMarkupItalicDelimiter 
