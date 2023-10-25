@@ -287,9 +287,9 @@ syntax match typstMarkupEnumList
     \ /\v^\s*(\+|\d+\.)\s+/
 " syntax match typstMarkupItalicError
 "     \ /\v(\w|\\)@<!_\S@=.*|.*\S@<=\\@<!_/
-syntax match typstMarkupItalic
-    \ /\v(\w|\\)@<!_\S@=.*(\n.+)*\S@<=\\@<!_/
-    \ contains=typstMarkupItalicRegion
+" syntax match typstMarkupItalic
+"     \ /\v(\w|\\)@<!_\S@=.*(\n.+)*\S@<=\\@<!_/
+"     \ contains=typstMarkupItalicRegion
 syntax region typstMarkupItalicRegion
     \ contained
     \ matchgroup=typstMarkupItalicDelimiter 
@@ -340,7 +340,7 @@ syntax match typstMathFunction
 syntax match typstMathNumber
     \ /\<\d\+\>/
     \ contained
-" runtime! syntax/typst-symbols.vim
+runtime! syntax/typst-symbols.vim
 
 
 " Math > Linked groups {{{2
